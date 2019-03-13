@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>iPec</title>
+    <title>iPec – Prototyping Emerging Civilization</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -477,10 +477,23 @@
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="footer-widget-area mt-50">
-                        <h6 class="widget-title mb-5">Subscribe to our newsletter</h6>
-                        <form action="services.html" class="subscribe-form">
-                            <input required type="email" name="subscribe-email" id="subscribeemail" placeholder="Your E-mail">
-                            <input type="submit" value="Subscribe" class="submit px-3">
+                        <h6 class="widget-title mb-5">Get in touch</h6>
+                        <script type="text/javascript">var submitted=false;</script>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none" onload="if(submitted){$('#fthx').html('<b><i>   Thank you, '+$('#fname').val()+' !</i></b>' ).removeClass('hid');$('#ftel').val('');$('#ftext').val('');$('#femail').val('');$('#fname').val('');}"></iframe>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScTGwUFFJ1QeljzWRIytdHF_SxFdpcYJrQ0HvlcxUYOGsqi1w/formResponse" method="POST" id="mG61Hd" class="subscribe-form" target="hidden_iframe" onsubmit="submitted=true;">
+                            <input id="fname" required type="text" placeholder="name" name="entry.2005620554">
+                            
+                            <input id="femail" required type="email" placeholder="email" name="entry.1045781291">
+                            
+                            <input id="ftel" class="hid" type="text" placeholder="tel" value="contact from i-pec.ml" name="entry.1166974658">
+                            
+                            <input id="ftext" type="text" placeholder="message" width="30" name="entry.839337160">
+                            
+                            <textarea id="pushToken" class="js-subscription-json hid" type="text" name="entry.1984977102"></textarea>
+                            
+                            <button type="submit" onclick="submitted=true" value="Send" class="submit px-3"><i class="fa fa-envelope"></i>&nbsp;send</button>
+                            
+                            <span id="fthx" class="hid"></span>
                         </form>
                     </div>
                 </div>
