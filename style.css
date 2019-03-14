@@ -1562,7 +1562,6 @@ img {
 
 .form-control-date {
     display: block;
-    width: 130%;
     height: calc(2.25rem + 2px);
     padding: .1rem .2rem; 
     font-size: 0.7rem;
@@ -1573,3 +1572,7 @@ img {
     border: 1px solid #ced4da;
     border-radius: .25rem;
 }
+
+ @media only screen and (max-width: 767px) {
+    .form-control-date {width: 130%;}
+}    
