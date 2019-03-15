@@ -1562,6 +1562,7 @@ img {
 
 .form-control-date {
     display: block;
+    width: 100%;
     height: calc(2.25rem + 2px);
     padding: .1rem .2rem; 
     font-size: 0.7rem;
