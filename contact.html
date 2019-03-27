@@ -56,7 +56,7 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="about-us.html">About</a></li>
                                     <!--
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
@@ -290,23 +290,27 @@
             <div class="row">
                 <div class="col-12">
                     <!-- Contact Form -->
-                    <form action="#" method="post">
+                    <script type="text/javascript">var submitted=false;</script>
+		            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none" onload="if(submitted){$('#fthx').html('<br><b><i>   Thank you, '+$('#fname').val()+' !</i></b>' ).removeClass('hid');$('#ftitle').val('');$('#ftext').val('');$('#femail').val('');$('#fname').val('');}"></iframe>
+		            <form action="https://docs.google.com/forms/d/e/1FAIpQLScTGwUFFJ1QeljzWRIytdHF_SxFdpcYJrQ0HvlcxUYOGsqi1w/formResponse" method="POST" id="mG61Hd" target="hidden_iframe" onsubmit="submitted=true;">
                         <div class="row">
                             <div class="col-lg-4">
-                                <input type="text" class="form-control" name="text" placeholder="Your Name">
+                                <input type="text" class="form-control"  id="fname" required placeholder="Your Name" name="entry.2005620554" >
                             </div>
                             <div class="col-lg-4">
-                                <input type="email" class="form-control" name="email" placeholder="E-mail">
+                                <input type="email" class="form-control" id="femail" required type="email" placeholder="Your email" name="entry.1045781291">
                             </div>
                             <div class="col-lg-4">
-                                <input type="text" class="form-control" name="subject" placeholder="Subject">
+                                <input type="text" class="form-control" id="ftitle" required placeholder="Title of Your Idea" name="entry.1984977102">
                             </div>
                             <div class="col-12">
-                                <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                <textarea name="message" class="form-control" id="ftext" required cols="30" rows="10" placeholder="Your Idea in detail" name="entry.839337160"></textarea>
                             </div>
+                            <input id="ftel" type="text" class="hid" value="from i-pec.ml/contact" name="entry.1166974658">
                             <div class="col-12">
-                                <button type="submit" class="btn palatin-btn mt-50">Send Message</button>
+                                <button type="submit" class="btn palatin-btn mt-50" onclick="submitted=true">Send It</button>
                             </div>
+                            <span class="col-lg-4" style="font-size:1.6em" id="fthx"></span>
                         </div>
                     </form>
                 </div>
