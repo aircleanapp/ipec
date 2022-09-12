@@ -581,9 +581,6 @@
                         <h6 class="widget-title mb-5"><span style="font-size:1.2em"><i class="icon-postcard"></i></span> Get in touch</h6>
                         <script type="text/javascript">
 							var submitted=false;
-							$( '#pushToken' ).change( function() {
-								$( '#send' ).attr("disabled", "disabled");
-							});
 						</script>
                         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none" onload="if(submitted){$('#fthx').html('<b><i>   Thank you, '+$('#fname').val()+' !</i></b>' ).removeClass('hid');$('#ftel').val('');$('#ftext').val('');$('#femail').val('');$('#fname').val('');}"></iframe>
                         <form action="https://docs.google.com/forms/d/e/1FAIpQLScTGwUFFJ1QeljzWRIytdHF_SxFdpcYJrQ0HvlcxUYOGsqi1w/formResponse" method="POST" id="mG61Hd" class="subscribe-form" target="hidden_iframe" onsubmit="submitted=true;">
@@ -595,7 +592,7 @@
                             
                             <input id="ftext" type="text" placeholder="message" width="30" name="entry.839337160">
                             
-                            <textarea id="pushToken" class="js-subscription-json hid" type="text" name="entry.1984977102"></textarea>
+                            <textarea id="pushToken" class="js-subscription-json hid" type="text" name="entry.1984977102" onChange="$( '#send' ).attr("disabled", "disabled");">></textarea>
                             
                             <button id="send" type="submit" onclick="submitted=true" value="Send" class="submit px-3"><i class="fa fa-envelope"></i>&nbsp;send</button>
                             
